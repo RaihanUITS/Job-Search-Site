@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+
+    <style>
+        body {
+            background-color: #eaeaea;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        li a:hover {
+            background-color: #233D9A;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#"><img src="Images/logo.png" style="width: 200px; height: auto; padding-left: 20px;"></a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Post Jobs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><img src="Images/walmart.png" style="width: 50px; height: auto; padding-right: 20px;"></a>
+            </li>
+        </ul>
+    </nav>
+
+    <br /><br /><br /><br />
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4" style="padding-right:30px; padding-left: 50px;">
+                <img style="height: 200px; width: 200px;"
+                            src="Images/walmart.png" class="rounded-circle"><br><br>
+                        <strong>Hexacom</strong>
+                </br></br>
+                <ul class="list-group list-group-flush" >
+                    <a href="#" class="list-group-item list-group-item-action" style="background-color: #eaeaea;">Running Jobs</a>
+                    <a href="#" class="list-group-item list-group-item-action active">Post Jobs</a>
+                    <a href="#" class="list-group-item list-group-item-action" style="background-color: #eaeaea;">Previous Jobs</a>
+                    <a href="#" class="list-group-item list-group-item-action" style="background-color: #eaeaea;">Shortlisted Candidate</a>
+                    <a href="#" class="list-group-item list-group-item-action" style="background-color: #eaeaea;">Edit Company Info</a>
+                    <a href="#" class="list-group-item list-group-item-action" style="background-color: #eaeaea;">Sign out</a>
+
+                </ul>
+            </div>
+            <br>
+
+            <div class="col-8">
+                <div style="padding: 10px; background-color: #ffffff;" class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="job title"> Job Title
+                                <span style="color: red">*</span>
+                            </label>
+                            <input type="text" class="form-control" name="job title" placeholder="Type here" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="salary">Salary
+                                <span style="color: red">*</span>
+                            </label>
+                            <input type="text" class="form-control" name="salary" placeholder="Type here" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="experience"> Experience
+                                <span style="color: red">*</span>
+                            </label>
+                            <select class="form-control" name="experience">
+                                <option selected>Type here</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="vacancy"> Vacancy
+                                <span style="color: red">*</span>
+                            </label>
+                            <input type="text" class="form-control" name="vacancy" placeholder="Type here" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="deadline"> Application Deadline
+                                <span style="color: red">*</span>
+                            </label>
+                            <input type="text" class="form-control" name="deadline" placeholder="Type here"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address
+                                <span style="color: red">*</span>
+                            </label>
+                            <input type="email" class="form-control" name="email" placeholder="Type here" required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group col-12">
+                        <label for="jobResponsilibities">Job Responsilibities
+                            <span style="color: red">*</span>
+                        </label>
+                        <textarea class="form-control" id="jobResponsilibities" rows="3"></textarea>
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="skillRequirement">Skill Requirement
+                            <span style="color: red">*</span>
+                        </label>
+                        <textarea class="form-control" id="skillRequirement" rows="3"></textarea>
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="educationalRequirement">Educational Requirement
+                            <span style="color: red">*</span>
+                        </label>
+                        <textarea class="form-control" id="educationalRequirement" rows="3"></textarea>
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="aditionalRequirement">Aditional Requirement
+                            <span style="color: red">*</span>
+                        </label>
+                        <textarea class="form-control" id="aditionalRequirement" rows="3"></textarea>
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="compansation">Compansation and other Benefits
+                            <span style="color: red">*</span>
+                        </label>
+                        <textarea class="form-control" id="compansation" rows="3"></textarea>
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="instruction">Application Instruction(If any)</label>
+                        <textarea class="form-control" id="instruction" rows="3"></textarea>
+                    </div>
+                </br></br>
+                    <div class="form-check col-12" style="margin-top: 10px;">
+                        <input class="form-check-input" type="checkbox" value="" id="enableOnlineApplication">
+                        <label class="form-check-label" for="enableOnlineApplication">
+                          <strong>Enable Online Application</strong>
+                        </label>
+                    </div>
+                    <div class="form-group col-2" style="margin-top: 20px;">
+                        <button class='btn btn-outline-secondary' style="padding: 10px 25px;"> Post </button>
+                    </div>
+
+                    <div class="form-group col-2" style="margin-top: 20px;">
+                        <button class='btn btn-primary' style="padding: 10px 25px;"> Delete </button>
+                    </div>
+
+                    <div class="form-group col-2" style="margin-top: 20px;">
+                        <button class='btn btn-outline-secondary' style="padding: 10px 25px;"> Edit </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    
+</body>
+
+</html>

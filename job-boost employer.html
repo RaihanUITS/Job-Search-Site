@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+
+    <style>
+        body {
+            background-color: #eaeaea;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        li a:hover {
+            background-color: #233D9A;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#"><img src="Images/logo.png" style="width: 200px; height: auto; padding-left: 20px;"></a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Search Jobs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Signup</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container" style="background-color: #ffff; margin-top: 50px; margin-left: 110px; margin-right: 120px; margin-bottom: 50px;">
+        <div class="row" style="background-color: #384d99;">
+            <div class="col-4" style="background-color: #384d99; color: white; padding: 20px;">
+                <strong>IT Manager</strong>
+                <br />
+                Salary: $ 20000-30000
+                <br />
+                Deadline: 20.10.2020
+                <br />
+            </div>
+            <div class="col-8"></div>
+        </div>
+        <br />
+        <div class="row" style="padding: 20px;">
+            <div class="col-12" style="text-align: center; font-size: 20px;">
+                <p></p><b>Boost a job to place in Hot Jobs Section</b></p>
+                <br />
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p style="font-size: 18px;">Credit or Debit Card</p>
+                </div>
+            </div>
+            <br />
+            <div class="col-12">
+                <img src="Images/visa.png" style="width: 100px ; height: 60px;">
+                <img src="Images/mastercard.png" style="width: 100px ; height: 60px;">
+                <img src="Images/paypal.png" style="width: 100px ; height: 60px;">
+                <img src="Images/payoneer.png" style="width: 100px ; height: 60px;">
+            </div>
+
+            <div class="container" style="margin-top: 20px;">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="form-group">
+                            <label for="nameOnCard"> Name on Card
+                            </label>
+                            <input type="text" class="form-control" name="nameOnCard" placeholder="Type here" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cardNumber"> Card Number
+                            </label>
+                            <input type="text" class="form-control" name="cardNumber" placeholder="Type here" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="securityCode"> Security Code
+                                    </label>
+                                    <input type="text" class="form-control" name="securityCode" placeholder="Type here" required>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="expiryDate"> Expiry Date
+                                    </label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="expiryDate" placeholder="MM" required>
+                                        <input type="text" class="form-control" name="expiryDate" placeholder="YY" required>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="amount"> Amount(In <i class="fas fa-pound-sign" style="font-size: 10px;"></i>)
+                            </label>
+                            <input type="text" class="form-control" name="amount" placeholder="Type here" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-2" style="margin-top: 20px;">
+                        <button class='btn btn-primary' style="padding: 10px 25px;"> Boost </button>
+                    </div>
+    
+                    <div class="form-group col-2" style="margin-top: 20px;">
+                        <button class='btn btn-outline-secondary' style="padding: 10px 25px;"> Close </button>
+                    </div>
+    
+                </div>
+                </br /></br />
+            </div>
+            
+
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

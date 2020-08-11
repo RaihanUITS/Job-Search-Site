@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        body {
+            background-color: #eaeaea;
+            padding: 5px;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        li a:hover {
+            background-color: #233D9A;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="background-image: url('back-design.png'); width: auto; height: auto;">
+
+        <nav class="navbar">
+            <a class="navbar-brand" href="#"><img src="Images/logoWhite.png"
+                    style="width: 200px; height: auto; padding-left: 20px;"></a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> <button class='btn btn-outline-secondary' style="padding: 10px 10px;">
+                            Sign out </button></a>
+                </li>
+            </ul>
+        </nav>
+        <br /><br /><br /><br />
+
+        <div class="row" style="padding-left: 40px; padding-right: 40px; padding-bottom: 40px">
+            <div class="col-3" style="padding-right:50px; padding-left: 30px;">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action" href="#"
+                        style="background-color:  #eaeaea;">Employers</a>
+                    <a class="list-group-item list-group-item-action" href="#"
+                        style="background-color:  #eaeaea;">Employees</a>
+                    <a class="list-group-item list-group-item-action" href="#"
+                        style="background-color:  #eaeaea;">Courses</a>
+                    <a class="list-group-item list-group-item-action active" href="#"
+                        >Change Info</a>
+                    <a class="list-group-item list-group-item-action" href="#"
+                        style="background-color:  #eaeaea;">Analytics</a>
+                    <a class="list-group-item list-group-item-action " href="#"
+                        style="background-color:  #eaeaea;">Transactions</a>
+                    <a class="list-group-item list-group-item-action" href="#"
+                        style="background-color:  #eaeaea;">Jobs</a>
+                    <a class="list-group-item list-group-item-action" href="#" style="background-color:  #eaeaea;">News
+                        and Blogs</a>
+                </div>
+            </div>
+            <br />
+
+            <div class="col-9">
+                <div class="container" style="background-color: white; padding-left: 50px; padding-right: 50px; padding-bottom: 50px; padding-top: 50px;">
+                    <div style="background-color: #384d99; padding: 10px; color: white;" class="row">
+                        <div class="col-4"><p>Change Name</p></div>
+                        <div class="col-6"></div>
+                        <div class="col-2"><i class="fas fa-sort-up" style="font-size: 20px; margin-left: 80px; margin-top: 12px;"></i></div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="changeName"> Change Name
+                                </label>
+                                <input type="text" class="form-control" name="changeName" placeholder="Type here" required>
+                            </div>
+                        </div>
+                        <div class="col-6"></div>
+                    </div>
+                    <div style="background-color: #384d99; padding: 10px; color: white;" class="row">
+                        <div class="col-4"><p>Change Password</p></div>
+                        <div class="col-6"></div>
+                        <div class="col-2"><i class="fas fa-sort-up" style="font-size: 20px; margin-left: 80px; margin-top: 12px;"></i></div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="previousPassword"> Previous Password
+                                    <span style="color: red">*</span>
+                                </label>
+                                <input type="text" class="form-control" name="previousPassword" placeholder="Type here" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="requestedPassword"> Requested Password
+                                    <span style="color: red">*</span>
+                                </label>
+                                <input type="text" class="form-control" name="requestedPassword" placeholder="Type here" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="re-enterPassword"> Re-enter Requested Password
+                                    <span style="color: red">*</span>
+                                </label>
+                                <input type="text" class="form-control" name="re-enterPassword" placeholder="Type here" required>
+                            </div>
+                        </div>
+                        <div class="col-6"></div>
+                    </div>
+                    <div style="background-color: #384d99; padding: 10px; color: white;" class="row">
+                        <div class="col-4"><p>Change Email</p></div>
+                        <div class="col-6"></div>
+                        <div class="col-2"><i class="fas fa-sort-up" style="font-size: 20px; margin-left: 80px; margin-top: 12px;"></i></div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="previousEmail"> Previous Email
+                                    <span style="color: red">*</span>
+                                </label>
+                                <input type="email" class="form-control" name="previousEmail" placeholder="jobswallet.co.uk@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="requestedEmail"> Requested Email
+                                </label>
+                                <input type="email" class="form-control" name="requestedEmail" placeholder="Type here" required>
+                            </div>
+                        </div>
+                        <div class="col-6"></div>
+                    </div>
+                    <br /> <br />
+
+                    <div class="row">
+                        <div class="form-group col-2" style="margin-top: 20px;">
+                            <button class='btn btn-primary' style="padding: 10px 25px;"> Save </button>
+                        </div>
+    
+                        <div class="form-group col-2" style="margin-top: 20px;">
+                            <button class='btn btn-outline-secondary' style="padding: 10px 25px;"> Cancel </button>
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+            </div>
+        </div>
+</body>
+
+</html>
